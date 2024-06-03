@@ -1,0 +1,10 @@
+rebuild_master:
+  steps:
+    - rebuild_package:
+        project: home:fdegirmenci
+        package: obs-rpm-example
+  filters:
+    event: push
+    branches:
+      only:
+        - main
